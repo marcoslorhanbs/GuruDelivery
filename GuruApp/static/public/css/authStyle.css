@@ -1,0 +1,166 @@
+
+@import url('https://fonts.cdnfonts.com/css/calistoga-2');
+
+
+
+main.container{
+    background: var(--white-Text);
+    max-width: 350px;
+    min-height: 40vh;
+    padding: 2rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    position: fixed;
+    top: 0;
+    margin-top: 100px;
+    margin-left: 35vw;
+    z-index: 9;
+}
+
+main h2{
+    font-size: high;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    position: relative;
+    font-family: 'Calistoga', cursive;
+}
+
+main h2::before{
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 25px;
+    bottom: 3px;
+    left: 0;
+    border-radius: 8px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field{
+    position: relative;
+}
+
+.input-field input{
+    outline: none;
+    font-size: 0.9rem;
+    padding-left: 10px;
+    border-color: var(--white-Text);
+}
+
+.input-field input::placeholder{
+    color: var(--main-Text);
+}
+
+form input[type="submit"]{
+    margin-top: 2rem;
+    padding: 0.4rem;
+    color: var(--white-Text);
+    cursor: pointer;
+    border-color: var(--white-Text);
+    font-size: 0.9rem;
+    font-weight: 300;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    height: 45px;
+    
+}
+
+form input[type="submit"]:hover{
+    letter-spacing: 0.5px;
+    
+}
+
+.Continue
+{
+    background-color: var(--main-Color);
+}
+
+
+.entryBox
+{
+    width: 285px;
+    height: 52px;
+    left: 22px;
+    top: 400px;
+
+    margin-top: 10px;
+
+    background: var(--middle-BG);
+    border-radius: 4px;
+}
+
+.smLine
+{
+    width: 213px;
+    height: 0px;
+    left: 250px;
+    top: 323px;
+    margin-left: 35px;
+    border: 1.5px solid var(--main-Color);
+}
+
+.smLineBG
+{
+    width: 300px;
+    height: 0px;
+    left: 24px;
+    top: 4px;
+    
+
+    border: 1.5px solid var(--secondary-Text);
+}
+
+.formH2
+{
+    margin-bottom: 15px;
+}
+
+.loginBtn
+{
+    height: 50px;
+    border-color: var(--main-Color);
+    margin-top: -20px;
+}
+
+.authBtns
+{
+    margin-top: 25px;
+}
+
+
+.modal
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.5;
+    
+}
+
+.login
+{
+    display: block;
+}
+.register
+{
+    display: none;
+}
+
+.ForgotPass
+{
+    display: none;
+}
+
+.checkEmail
+{
+    display: none;
+}
