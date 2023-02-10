@@ -148,7 +148,7 @@ form input[type="submit"]:hover{
 
 .login
 {
-    display: block;
+    display: none;
 }
 .register
 {
