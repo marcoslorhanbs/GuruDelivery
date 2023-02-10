@@ -1,0 +1,19 @@
+.mainColorText
+{
+    color: var(--main-Color);
+}
+
+.mainText
+{
+    color: var(--main-Text);
+}
+
+.whiteText
+{
+    color: var(--white-Text);
+}
+
+.mainColor
+{
+    background-color: var(--main-Color);
+}
