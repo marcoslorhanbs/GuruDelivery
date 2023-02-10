@@ -9,7 +9,8 @@
         <div class="smLineBG"></div>
         <div class="smLine"></div>
         
-        <form action="">
+        <form method="post" action="/logged/" accept-charset="utf-8">
+            {% csrf_token%}
             <div class="input-field">
                 <input class="entryBox" type="text" name="email" id="email" placeholder="Digite seu e-mail">
                 <div class="underline"></div>
@@ -19,7 +20,7 @@
                 <input class="entryBox" type="password" name="password" id="password" placeholder="Digite sua senha">
                 <div class="underline"></div>
             </div>
-            <input type="submit" value="Entrar" name="Entrar" class="Continue">
+            <input type="submit" value="Entrar" class="Continue">
         </form>
         <br>
         <p style="text-align: center;">Esqueceu sua senha? <a onclick="showForgotPass()">Clique aqui</a></p>
@@ -39,9 +40,10 @@
         <div class="smLineBG"></div>
         <div class="smLine"></div>
         
-        <form action="">
+        <form method="post" action="/registered/" accept-charset="utf-8">
+            {% csrf_token%}
             <div class="input-field">
-                <input class="entryBox" type="text" name="nome" id="name" placeholder="Digite seu nome">
+                <input class="entryBox" type="text" name="name" id="name" placeholder="Digite seu nome">
                 <div class="underline"></div>
             </div>
             <br>

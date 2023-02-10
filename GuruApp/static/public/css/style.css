@@ -53,6 +53,7 @@ html
         width: 125px;
         height: 45px;
         color: var(--white-Text);
+        margin-left: 10px;
     }
 
     .login-btn:hover
