@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from GuruApp.views import home, CadastraUsuario, LogaUsuario, menu, product
+from GuruApp.views import home, CadastraUsuario, LogaUsuario, menu, product, sacola, adress, checkout
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -23,5 +23,8 @@ urlpatterns = [
     path('logged/', LogaUsuario),
     path('registered/', CadastraUsuario),
     path('menu/', menu),
-    path('product/', product)
+    path('product/', product),
+    path('bag/', sacola),
+    path('adress/', adress),
+    path('checkout/', checkout)
 ]
