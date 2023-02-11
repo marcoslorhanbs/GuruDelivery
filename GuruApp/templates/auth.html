@@ -96,3 +96,35 @@
         <div style="visibility: hidden;" class="smLine"></div>
     </main>
 </section>
+
+<!-- Gerente -->
+
+<section id="Register" class="register">
+    <main style="height:95vh;" class="container">
+        <h2 class="formH2" style="text-align: center;">Guru <span style="color:var(--main-Color)">•</span> Delivery</h2>
+        <p class="formP" style="text-align: center;">Preencha os campos <br> para criar o seu cadastro como Restaurante</p>
+        <div class="smLineBG"></div>
+        <div class="smLine"></div>
+        
+        <form method="post" action="/registered/" accept-charset="utf-8">
+            {% csrf_token%}
+            <div class="input-field">
+                <input class="entryBox" type="text" name="name" id="name" placeholder="Digite seu nome">
+                <div class="underline"></div>
+            </div>
+            <br>
+            <div class="input-field">
+                <input class="entryBox" type="text" name="email" id="email" placeholder="Digite seu e-mail">
+                <div class="underline"></div>
+            </div>
+            <br>
+            <div class="input-field">
+                <input class="entryBox" type="password" name="password" id="password" placeholder="Digite sua senha">
+                <div class="underline"></div>
+            </div>
+            <input type="submit" value="Cadastrar" name="Cadastrar" class="Continue">
+        </form>
+        <br>
+        <p style="text-align: center;">Ja tem cadastro? <a onclick="showLogin()" >Fazer Login</a></p> 
+    </main>
+</section>

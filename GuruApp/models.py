@@ -7,3 +7,10 @@ class user(models.Model):
     name = models.CharField(max_length=250)
 
 
+class Hamburguer(models.Model):
+    productName = models.CharField(max_length=250)
+    productLine = models.CharField(max_length=250)
+    productDescription = models.TextField(max_length=500)
+    productPrice = models.FloatField()
+    
+    
