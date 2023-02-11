@@ -1,3 +1,21 @@
+:root /* Color Variables */
+{
+    --bg-Color: #ffffff;
+    --main-Color: #FB9400;
+    --main-Text: #000000;
+    --white-Text: #ffffff;
+    --secondary-Text: #979797;
+    --success-Text: #6AB70A;
+    --primary-Text: #4F77BE;
+    --error-Text: #C44D61;
+    --warning-Text: #D4BC34;
+    --primary-BG: #EDF1F8;
+    --success-BG: #F1F8F6;
+    --error-BG: #F1D5DA;
+    --warning-BG: #FEFAE6;
+    --middle-BG: #F9F9FB;
+}
+
 .mainColorText
 {
     color: var(--main-Color);

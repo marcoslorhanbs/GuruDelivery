@@ -1,0 +1,38 @@
+.Brand
+{
+    font-family: 'Calistoga', cursive;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 47px;
+    color: var(--main-Text) !important;
+}
+
+.Brand:hover
+{
+    color: var(--main-Color) !important;
+}
+.brandSpan
+{
+    color: var(--main-Color);
+}
+
+.login-btn
+{
+    background-color: var(--main-Color);
+    width: 125px;
+    height: 45px;
+    color: var(--white-Text);
+    margin-left: 10px;
+}
+
+.login-btn:hover
+{
+    background-color: var(--main-Color);
+    color: var(--main-Text);
+    
+}
+
+.navbar
+{
+    border-bottom: 1px solid var(--secondary-Text);
+}
