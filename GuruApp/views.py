@@ -9,11 +9,15 @@ def home(request):
     context = {}
     return HttpResponse(template.render(context, request))
 
-def teste(request):
-    template = loader.get_template("test.html")
+def menu(request):
+    template = loader.get_template("menu.html")
     context = {}
     return HttpResponse(template.render(context, request))
 
+def product(request):
+    template = loader.get_template("product.html")
+    context = {}
+    return HttpResponse(template.render(context, request))
 
 # DB Pattern
 def CadastraUsuario(request):
