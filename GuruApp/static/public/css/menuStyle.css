@@ -1,0 +1,247 @@
+
+@import url('https://fonts.cdnfonts.com/css/calistoga-2');
+
+main{
+    height:98vh; 
+    justify-content: center; 
+    text-align: center; 
+    align-items: center;
+}
+
+
+main h2{
+    font-size: high;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    position: relative;
+    font-family: 'Calistoga', cursive;
+}
+
+main h2::before{
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 25px;
+    bottom: 3px;
+    left: 0;
+    border-radius: 8px;
+}
+
+.burguers p{
+    font-size: 10px;
+    font-weight: bold;
+}
+.burguers h5{
+    font-weight: bold;
+}
+
+.burguers h6{
+    font-weight: bold;
+    color: #FB9400;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field{
+    position: relative;
+}
+
+.input-field input{
+    outline: none;
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.7);
+    padding-left: 10px;
+}
+
+.input-field input::placeholder{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+form input[type="submit"]{
+    margin-top: 2rem;
+    padding: 0.4rem;
+    background: linear-gradient(to left, #FB9400, #FB9400);
+    cursor: pointer;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 300;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    height: 45px;
+    
+}
+
+form input[type="submit"]:hover{
+    letter-spacing: 0.5px;
+    background: linear-gradient(to right, #f8a634, #f4af4e);
+}
+
+a:link {
+    color: #FB9400;
+    text-decoration: none;
+   }
+
+
+.entryBox
+{
+    width: 400px;
+    height: 52px;
+    left: 22px;
+    top: 400px;
+
+    margin-top: 10px;
+
+    background: #F9F9FB;
+    border-radius: 4px;
+    border: 1.5px solid #FB9400;
+}
+
+.form-control{
+    width: 50px;
+    height: 30px;
+}
+
+.input-group-text{
+    width: 50px;
+    height: 30px;
+}
+
+.smLine
+{
+    width: 213px;
+    height: 0px;
+    left: 250px;
+    top: 323px;
+    margin-left: 35px;
+    
+    border: 1.5px solid #FB9400;
+}
+
+.smLineBG
+{
+    width: 300px;
+    height: 0px;
+    left: 24px;
+    top: 4px;
+    
+
+    border: 1.5px solid #E2E2E2;
+}
+
+.smLineCD
+{
+    width: 400px;
+    height: 0px;
+    left: 24px;
+    top: 4px;
+    
+
+    border: 1.5px solid #E2E2E2;
+}
+
+.formH2
+{
+    margin-bottom: 15px;
+}
+
+.loginBtn
+{
+    height: 50px;
+    border-color: #FB9400;
+    margin-top: -20px;
+}
+
+.authBtns
+{
+    margin-top: 25px;
+}
+
+/* Cartão dos Hamburgueres */
+
+.itemBox
+    {
+        margin-top: 2vh;
+        margin-bottom: 0.3vh;
+        width: 220px;
+        height: 220px;
+        left: 260px;
+        top: 1360px;
+        text-align: center;
+        background: #FFFFFF;
+        box-shadow: 0px 24px 40px rgba(0, 0, 0, 0.16);
+        border-radius: 24px;
+
+        background-image: linear-gradient(to bottom, #FFFFFF 50%, #FFF9F2 50%);
+        background-image: -o-linear-gradient(bottom, #FFFFFF 50%, #FFF9F2 50%);
+        background-image: -moz-linear-gradient(bottom, #FFFFFF 50%, #FFF9F2 50%);
+        background-image: -webkit-linear-gradient(bottom, #FFFFFF 50%, #FFF9F2 50%);
+        background-image: -ms-linear-gradient(bottom, #FFFFFF 50%, #FFF9F2 50%);
+    }
+
+    .itemContent
+    {
+        font-weight: 500;
+        line-height: 0px;
+    }
+
+    .itemContent p
+    {
+        font-size: 8pt;
+        font-family: 'Inter';
+        font-style: normal;
+    }
+
+    .itemContent h5
+    {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18pt;
+        line-height: 25px;
+    }
+
+    .itemContent h6
+    {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14pt;
+        line-height: 10px;
+        color: var(--main-Color);
+    }
+
+
+
+    .itemImg
+    {
+        width: 122px;
+        height: 146px;
+        
+    }
+
+
+    .burguerSearch
+    {
+        width:20vw;
+    }
+
+    .lupaBtn{
+        width: 45px; 
+        height: 51px; 
+        border-color: white; 
+        background-color: white !important; 
+        position: absolute; 
+        left: 370px; 
+    }
+
+    .lupaBtn i{
+        font-size: 15pt; color: #FB9400;
+    }
+
+    .hamburguerSearch{
+        left: 340px;
+    }

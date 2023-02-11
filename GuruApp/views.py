@@ -9,6 +9,10 @@ def home(request):
     context = {}
     return HttpResponse(template.render(context, request))
 
+def teste(request):
+    template = loader.get_template("test.html")
+    context = {}
+    return HttpResponse(template.render(context, request))
 
 
 # DB Pattern
