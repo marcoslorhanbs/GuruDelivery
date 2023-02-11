@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/7a9bd15cd7.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'public/css/productStyle.css'%}">
+    <link rel="stylesheet" href="{% static 'public/css/navbarStyle.css'%}">
+    <link rel="stylesheet" href="{% static 'public/css/colors.css'%}">
+    <title>Produto</title>
+</head>
+<body>
+    <section id="product" class="product">
+        <main style="height:95vh;" class="container productBG">
+            <h2 class="formP" >Produto</h2>
+            <div class="itemBox">
+                <img class="itemImg" src="../static/public/images/Card-burger-2 2.png" alt="">
+                <div class="itemContent">
+                    <p>Burguer type</p>
+                    <h5>Burguer name</h5>
+                    <div class="smLine"></div>
+                    
+                    <p style="margin-top: 20px;">Burguer description</p>
+                </div>
+            </div>
+
+            <p style="margin-left: -150px;">Quantidade</p>
+            <br>
+            <br>
+            <div class="quantityGroup">
+                <Button class="qntMinusBtn btn">-</Button>
+                <div class="qntValueText"><h3>01</h3></div>
+                <Button class="qntMoreBtn btn">+</Button>
+            </div>
+
+            <div>
+                <h3 class="priceText">R$ 25,50</h3>
+            </div>
+            <input type="submit" value="Adicionar à sacola" name="Entrar" style="background-color: var(--main-Color); color: white;" class="Continue btn btn-warning loginBtn addBag">
+            <div style="visibility: hidden;" class="smLineBG"></div>
+            <div style="visibility: hidden;" class="smLine"></div>
+        </main>
+    </section>
+</body>
+</html>

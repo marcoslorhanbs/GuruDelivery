@@ -21,3 +21,9 @@ function showCheckEmail()
     document.getElementById("ForgotPass").style = "display: none";
     document.getElementById("Login").style = "display:none";
 }
+
+function showAddNewLocal()
+{
+    document.getElementById("addLocal").style = 'display: block';
+}
+

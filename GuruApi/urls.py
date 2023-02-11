@@ -15,12 +15,16 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from GuruApp.views import home, CadastraUsuario, LogaUsuario, teste
+from GuruApp.views import home, CadastraUsuario, LogaUsuario, menu, product, sacola, adress, checkout
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home, name='home',),
     path('logged/', LogaUsuario),
     path('registered/', CadastraUsuario),
-    path('test/', teste)
+    path('menu/', menu),
+    path('product/', product),
+    path('bag/', sacola),
+    path('adress/', adress),
+    path('checkout/', checkout)
 ]
