@@ -28,3 +28,5 @@ urlpatterns = [
     path('adress/', adress),
     path('checkout/', checkout)
 ]
+
+admin.site.site_header = "Administração GuruDelivery"
