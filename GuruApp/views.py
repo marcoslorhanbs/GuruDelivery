@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.template import loader
 from django.http import HttpResponse, HttpResponseRedirect
 from .models import user
@@ -48,7 +48,7 @@ def CadastraUsuario(request):
         return HttpResponse(template.render(context, request)) 
 def LogaUsuario(request):
     if request.method == 'POST':
-        template = loader.get_template("app.html")
+        template = loader.get_template("bag.html")
         email = request.POST.get("email")
         password = request.POST.get("password")
         try:
@@ -59,4 +59,4 @@ def LogaUsuario(request):
         except Exception as e:
             print(e)
         context = {}
-        return HttpResponse(template.render(context, request)) 
+        return redirect(sacola)
