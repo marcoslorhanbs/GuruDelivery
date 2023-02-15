@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.template import loader
 from django.http import HttpResponse, HttpResponseRedirect
 from .models import user
+from GuruApp.admin import Hamburguer
 
 # Create your views here.
 def home(request):
@@ -10,8 +11,13 @@ def home(request):
     return HttpResponse(template.render(context, request))
 
 def menu(request):
+    burguerList = []
+    for Hamburguer in Hamburguer.objects.all():
+        burguerList.append(Hamburguer)
+
     template = loader.get_template("menu.html")
-    context = {}
+    context = {'data':burguerList}
+
     return HttpResponse(template.render(context, request))
 
 def product(request):
