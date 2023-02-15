@@ -12,8 +12,8 @@ def home(request):
 
 def menu(request):
     burguerList = []
-    for Hamburguer in Hamburguer.objects.all():
-        burguerList.append(Hamburguer)
+    for hamburguer in Hamburguer.objects.all():
+        burguerList.append(hamburguer)
 
     template = loader.get_template("menu.html")
     context = {'data':burguerList}
