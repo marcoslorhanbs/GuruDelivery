@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.template import loader
 from django.http import HttpResponse, HttpResponseRedirect
-from .models import user
+from .models import user, Hamburguer
 
 # Create your views here.
 def home(request):
@@ -10,13 +10,16 @@ def home(request):
     return HttpResponse(template.render(context, request))
 
 def menu(request):
+    data = Hamburguer.objects.all()
     template = loader.get_template("menu.html")
-    context = {}
+    context = {'data':data}
+
     return HttpResponse(template.render(context, request))
 
 def product(request):
+    data = Hamburguer.objects.all()
     template = loader.get_template("product.html")
-    context = {}
+    context = {'data':data}
     return HttpResponse(template.render(context, request))
 
 def sacola(request):
@@ -59,4 +62,4 @@ def LogaUsuario(request):
         except Exception as e:
             print(e)
         context = {}
-        return redirect(sacola)
+        return redirect(product)
