@@ -20,14 +20,14 @@
     <section id="Navbar">
         <nav class="navbar navbar-expand-lg bg-body-light">
             <div class="container-fluid">
-              <a class="navbar-brand Brand" href="#">Guru <span class="brandSpan">•</span> Delivery</a>
+              <a class="navbar-brand Brand" href="/">Guru <span class="brandSpan">•</span> Delivery</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Início</a>
+                    <a class="nav-link active" aria-current="page" href="/">Início</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">Burgers</a>
@@ -75,47 +75,19 @@
                     <div class="row-">
                         <img src="../static/public/images/banner - promoção 01.png">
                     </div>
-                {% for burguer in burguerList %}
-                    <div class="row">
-                            <div class="col">
+                {% for burguer in data %}
+                      <div class="row">
+                        <div class="col">
+                            <div class="itemBox menuBurg">
                                 <img class="itemImg" src="../static/public/images/Card-burger-1 1.png" alt="">
-                                
-                                    <p>Tradicional</p>
-                                    <h5>{{ burguer.productName }}</h5>
-                                    <h6>R$ 25,50</h6>
-                        
-                                <img class="itemImg" src="../static/public/images/Card-burger-2 2.png" alt="">
-                                
+                                <div class="itemContent">
                                     <p>Tradicional</p>
                                     <h5>{{ burguer }}</h5>
                                     <h6>R$ 25,50</h6>
-
-                                <img class="itemImg" src="../static/public/images/Card-burger-3 1.png" alt="">
-                                
-                                    <p>Tradicional</p>
-                                    <h5>{{ burguer }}</h5>
-                                    <h6>R$ 25,50</h6>
-                                  
-                                <img class="itemImg" src="../static/public/images/Card-burger-4 1.png" alt="">
-                                
-                                    <p>Tradicional</p>
-                                    <h5>{{ burguer }}</h5>
-                                    <h6>R$ 25,50</h6>
-   
-                                <img class="itemImg" src="../static/public/images/Card-burger-3 1.png" alt="">
-                            
-                                    <p>Tradicional</p>
-                                    <h5>{{ burguer }}</h5>
-                                    <h6>R$ 25,50</h6>
-
-                            
-                                <img class="itemImg" src="../static/public/images/Card-burger-1 1.png" alt="">
-                                
-                                    <p>Tradicional</p>
-                                    <h5>{{ burguer }}</h5>
-                                    <h6>R$ 25,50</h6>
+                                </div>
                             </div>
-                    </div>
+                        </div>
+                      </div>
                 {% endfor %}
             </form>    
             

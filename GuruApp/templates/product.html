@@ -20,17 +20,18 @@
     <section id="product" class="product">
         <main style="height:95vh;" class="container productBG">
             <h2 class="formP" >Produto</h2>
+            {% for burguer in data %}
             <div class="itemBox">
                 <img class="itemImg" src="../static/public/images/Card-burger-2 2.png" alt="">
                 <div class="itemContent">
-                    <p>Burguer type</p>
-                    <h5>Burguer name</h5>
+                    <p>{{ burguer.productLine }}</p>
+                    <h5>{{ burguer }}</h5>
                     <div class="smLine"></div>
                     
-                    <p style="margin-top: 20px;">Burguer description</p>
+                    <p style="margin-top: 20px;">{{ burguer.productDescription }}</p>
                 </div>
             </div>
-
+            {% endfor %}
             <p style="margin-left: -150px;">Quantidade</p>
             <br>
             <br>
@@ -43,7 +44,9 @@
             <div>
                 <h3 class="priceText">R$ 25,50</h3>
             </div>
-            <input type="submit" value="Adicionar à sacola" name="Entrar" style="background-color: var(--main-Color); color: white;" class="Continue btn btn-warning loginBtn addBag">
+            <a href="/bag">
+                <input type="submit" href="/bag" value="Adicionar à sacola"  name="Entrar" style="background-color: var(--main-Color); color: white;" class="Continue btn btn-warning loginBtn addBag">
+            </a>
             <div style="visibility: hidden;" class="smLineBG"></div>
             <div style="visibility: hidden;" class="smLine"></div>
         </main>
